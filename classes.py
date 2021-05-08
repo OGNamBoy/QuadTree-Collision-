@@ -2,8 +2,8 @@ import pygame
 
 # class for game window
 class Window:
-    width = 500
-    height = 500
+    width = 400
+    height = 400
     windowScreen = pygame.display.set_mode([width, height])
 
     def screen(self):
@@ -68,8 +68,9 @@ class QuadTree:
     def insert(self, point):
         if self.boundary.contains(point) == False:
             return False
-        if len(self.points) > self.capacity:
+        if len(self.points) < self.capacity:
             self.points.append(point)
+            return True
         else:
             if self.divided == False:
                 self.subdivide()
