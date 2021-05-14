@@ -21,8 +21,8 @@ for i in range(len(particles)):
     x = random.randint(0 + Point(0, 0, 0, 0).r, width - Point(0, 0, 0, 0).r)
     y = random.randint(0 + Point(0, 0, 0, 0).r, height - Point(0, 0, 0, 0).r)
     # randomly choose trajectory of the particle
-    xDir = random.randint(-3, 3)
-    yDir = random.randint(-3, 3)
+    xDir = random.randint(1, 3)
+    yDir = random.randint(1, 3)
     # add particle to list
     particles[i] = Point(x, y, xDir, yDir)
 
