@@ -8,4 +8,4 @@ The visualization can be found in init.py and collisions.py. They are the same e
 
 testing.py takes mouse input from the user and adds a point to the quadTree. Note that even though the max amount of points the quadTree will hold before it subdivides is 4, visually it may look like it takes more than 4 points for the quadTree to subdivide. This is because some points that visually appear to be in a certain quadTree are instead held by one of the parent quadTrees.
 
-All these files call upon the quadTree, Point, and other classes written in classes.py
+All these files call upon the QuadTree, Point, and other classes written in classes.py
