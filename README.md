@@ -2,7 +2,7 @@
 
 The main project:
 
-This visualization of quadTree collissions constantly updates the quadTree, showing the subdivisions with green lines. Each point starts off red, and when they collide, they turn blue.
+This visualization of quadTree collissions constantly updates the quadTree as particles move around, showing the subdivisions with green lines. Each point starts off red, and when they collide, they turn blue.
 
 The visualization can be found in init.py and collisions.py. They are the same except for slightly different particle behavior. In collisions.py, the particles migrate to one end of the screen, which may help visualize the subdivisions of the quadTree better.
 
